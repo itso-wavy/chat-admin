@@ -22,7 +22,7 @@ export default tseslint.config({
       tsconfigRootDir: import.meta.dirname,
     },
   },
-})
+});
 ```
 
 - Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
@@ -31,7 +31,7 @@ export default tseslint.config({
 
 ```js
 // eslint.config.js
-import react from 'eslint-plugin-react'
+import react from 'eslint-plugin-react';
 
 export default tseslint.config({
   // Set the react version
@@ -46,5 +46,21 @@ export default tseslint.config({
     ...react.configs.recommended.rules,
     ...react.configs['jsx-runtime'].rules,
   },
-})
+});
 ```
+
+---
+
+# stack
+
+<!-- - [next.js](https://nextjs.org/docs) -->
+
+- React v19
+- [vitejs](https://v3.vitejs.dev/)
+- ui: chakra-ui
+- 스타일링: css **modules**
+- 라우터: [reactrouter](https://reactrouter.com/) v7
+- 상태 관리:
+  - 폼: [react-hook-form](https://react-hook-form.com/get-started)
+  - client: [zustand v5](https://zustand-demo.pmnd.rs/)
+  - server: [tanstack-query](https://tanstack.com/query/latest)
